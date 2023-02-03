@@ -58,6 +58,34 @@
 .container .box .dream:hover img{
     transform: scale(0.95);
 }
+.box .popup-image{
+    position: fixed;
+    top: 0; left: 0;
+    background: black;
+    width: 100%;
+    z-index: 100;
+    display: none;
+}
+.box .popup-image span{
+    position: absolute;
+    top: 0; right: 10px;
+    font-size: 60px;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+    z-index: 100;
+}
+.box .popup-image img{
+    position: absolute;
+    margin-top: 430px;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #fff;
+    border-radius: 5px;
+    width: 720px;
+    object-fit: cover;
+}
+
 
 
 @media only screen and (max-width: 600px){
@@ -69,5 +97,8 @@
     }
     .container .heading h3{
         font-size: 5em;
+    }
+    .box .popup-image img{
+        width: 95%;
     }
 }
