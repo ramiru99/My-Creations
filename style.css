@@ -61,7 +61,7 @@
 .box .popup-image{
     position: fixed;
     top: 0; left: 0;
-    background: black;
+    background: rgba(0,0,0,0.9);
     width: 100%;
     z-index: 100;
     display: none;
