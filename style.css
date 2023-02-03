@@ -53,7 +53,7 @@
     border-radius: 10px;
     display: block;
     object-fit: cover;
-    transition: .2s linear;
+    transition: transform 0.5s;
 }
 .container .box .dream:hover img{
     transform: scale(0.95);
