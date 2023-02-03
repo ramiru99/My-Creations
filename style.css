@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'There Brat';
+    src: url(Fonts/There\ Brat.ttf);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px 20px 0 20px;
+}
+.container .heading{
+    width: 50%;
+    padding-bottom: 50px;
+}
+.container .heading h3{
+    font-size: 3em;
+    font-weight: bolder;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #222;
+    font-family: There Brat;
+}
+.container .heading h3 span{
+    font-weight: 500;
+    font-family: There Brat;
+    color: red;
+}
+.container .box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.container .box .dream{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+}
+.dream{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.container .box .dream img{
+    width: 100%;
+    padding-bottom: 15px;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.container .box .dream:hover img{
+    transform: scale(0.95);
+}
+
+
+@media only screen and (max-width: 600px){
+    .container .box{
+        flex-direction: column;
+    }
+    .container .heading{
+        width: 100%;
+    }
+    .container .heading h3{
+        font-size: 5em;
+    }
+}
