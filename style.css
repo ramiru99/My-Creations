@@ -52,10 +52,11 @@
     padding-bottom: 15px;
     border-radius: 10px;
     display: block;
-    transition: transform 0.5s;
+    object-fit: cover;
+    transition: .2s linear;
 }
 .container .box .dream:hover img{
-    transform: scale(0.95);
+    transform: scale(1.1);
 }
 
 
