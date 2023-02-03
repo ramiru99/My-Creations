@@ -56,7 +56,7 @@
     transition: .2s linear;
 }
 .container .box .dream:hover img{
-    transform: scale(1.1);
+    transform: scale(0.95);
 }
 
 
